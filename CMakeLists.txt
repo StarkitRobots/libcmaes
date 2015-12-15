@@ -6,6 +6,9 @@ find_package(Eigen3 REQUIRED)
 option (ENABLE_SURROGATE
     "Enable surrogate" OFF)
 
+option (BUILD_EXAMPLES
+    "Build examples" OFF)
+
 #Include sources directory
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
@@ -44,4 +47,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
 
 #Build Code as static library
 add_library(cmaes STATIC ${SOURCES_FILES})
-target_link_libraries(cmaes Eigen)
+target_link_libraries(cmaes)
+
+if (BUILD_EXAMPLES)
+    add_executable(sample-code examples/sample-code.cc)
+    target_link_libraries(sample-code cmaes)
+endif ()
