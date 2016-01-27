@@ -1,5 +1,5 @@
 {
-    "name": "rhoban/libcmaes",
+    "name": "rhobandeps/libcmaes",
     "includes": "src",
     "build": [
         "mkdir build",
