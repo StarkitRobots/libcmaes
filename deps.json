@@ -1,6 +1,6 @@
 {
     "name": "rhobandeps/libcmaes",
-    "includes": "src",
+    "includes": [".", "src"],
     "build": [
         "mkdir build",
         "cd build",
