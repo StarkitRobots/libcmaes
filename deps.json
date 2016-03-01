@@ -2,6 +2,7 @@
     "name": "rhobandeps/libcmaes",
     "includes": [".", "src"],
     "libraries": "build",
+    "links": "cmaes",
     "build": [
         "mkdir -p build",
         "cd build",
