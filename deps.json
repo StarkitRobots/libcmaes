@@ -1,5 +1,6 @@
 {
     "name": "rhobandeps/libcmaes",
+    "deps": ["rhobandeps/eigen"],
     "includes": [".", "src"],
     "libraries": "build",
     "links": "cmaes",
