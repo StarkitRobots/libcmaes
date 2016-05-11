@@ -46,7 +46,7 @@ endif ()
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
 
 #Build Code as static library
-add_library(cmaes STATIC ${SOURCES_FILES})
+add_library(cmaes SHARED ${SOURCES_FILES})
 target_link_libraries(cmaes)
 
 if (BUILD_EXAMPLES)

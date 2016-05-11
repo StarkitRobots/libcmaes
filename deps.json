@@ -3,7 +3,7 @@
     "deps": ["rhobandeps/eigen"],
     "includes": [".", "src"],
     "libraries": "build",
-    "links": "build/libcmaes.a",
+    "links": "build/libcmaes.so",
     "build": [
         "mkdir -p build",
         "cd build",
