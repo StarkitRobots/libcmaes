@@ -2,7 +2,6 @@
     "name": "rhobandeps/libcmaes",
     "deps": ["rhobandeps/eigen"],
     "includes": [".", "src"],
-    "libraries": "build",
     "links": "build/libcmaes.so",
     "build": [
         "mkdir -p build",
