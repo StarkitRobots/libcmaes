@@ -1,5 +1,16 @@
-project(LibCMAES)
+project(libcmaes)
 cmake_minimum_required(VERSION 2.8)
+
+find_package(catkin REQUIRED COMPONENTS
+  Eigen
+  )
+
+catkin_package(
+  INCLUDE_DIRS src
+  LIBRARIES cmaes
+  CATKIN_DEPENDS Eigen
+)
+
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
 option (ENABLE_SURROGATE
