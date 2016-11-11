@@ -6,7 +6,7 @@ find_package(catkin REQUIRED COMPONENTS
   )
 
 catkin_package(
-  INCLUDE_DIRS src
+  INCLUDE_DIRS .
   LIBRARIES cmaes
   CATKIN_DEPENDS Eigen
 )
@@ -22,6 +22,7 @@ option (BUILD_EXAMPLES
 #Include sources directory
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
+include_directories(${catkin_INCLUDE_DIRS})
 
 #Enable C++11
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
