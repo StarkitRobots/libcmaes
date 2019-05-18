@@ -1,6 +1,6 @@
 {
-    "name": "rhobandeps/libcmaes",
-    "deps": ["rhobandeps/eigen"],
+    "name": "StarkitRobots/libcmaes",
+    "deps": ["StarkitRobots/eigen"],
     "includes": [".", "src"],
     "links": "build/libcmaes.so",
     "build": [
